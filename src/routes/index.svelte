@@ -1,32 +1,15 @@
-<script context="module">
-	export const prerender = true;
-</script>
 
-<script>
-	import Counter from '$lib/Counter/index.svelte';
-</script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>Ben Cohen Dev</title>
 </svelte:head>
 
 <section>
-	<h1>
-		<div class="welcome">
-			<picture>
-				<source srcset="svelte-welcome.webp" type="image/webp" />
-				<img src="svelte-welcome.png" alt="Welcome" />
-			</picture>
-		</div>
-
-		to your new<br />SvelteKit app
-	</h1>
-
-	<h2>
-		try editing <strong>src/routes/index.svelte</strong>
-	</h2>
-
-	<Counter />
+    <section>
+        <h1>Ben Cohen</h1>
+        <h2>JS | React | Svelte</h2>
+        <p>Let's talk: ben@bencohen.dev</p>
+    </section>
 </section>
 
 <style>
@@ -56,4 +39,36 @@
 		top: 0;
 		display: block;
 	}
+	body,
+    html {
+        font-family: 'Poppins', sans-serif;
+        background: #1A2238;
+    }
+
+    section {
+        width: 50vw;
+        height: 100%;
+        margin: auto;
+        margin-top: 35vh;
+        line-height: 1;
+    }
+
+    section h1 {
+        font-weight: 300;
+        font-size: 5em;
+        color: #9DAAF2;
+        margin-bottom: .25em;
+    }
+
+    section h2 {
+        font-weight: 100;
+        font-size: 2em;
+        color: #FF6A3D;
+    }
+
+    section p {
+        font-weight: 200;
+        font-size: 1.5em;
+        color: #F4DB7D;
+    }
 </style>
