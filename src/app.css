@@ -2,6 +2,37 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+@layer base {
+	@font-face {
+		font-family: 'Lobster Two';
+		src: local('Lobster Two'), local('Lobster-Two'), local('lobster two'), local('lobster-two'),
+			url('/fonts/lobster-two/LobsterTwo-Regular.otf');
+		font-weight: normal;
+		font-display: swap;
+	}
+	@font-face {
+		font-family: 'Lobster Two';
+		src: local('Lobster Two Bold'), local('Lobster-Two-Bold'), local('lobster two bold'),
+			local('lobster-two-bold'), url('/fonts/lobster-two/lobster-two/LobsterTwo-Bold.otf');
+		font-weight: bold;
+		font-display: swap;
+	}
+	@font-face {
+		font-family: 'Space Grotesk';
+		src: local('Space Grotesk'), local('Space-Grotesk'), local('Space Grotesk'),
+			local('Space-Grotesk'), url('/fonts/spacegrotesk/SpaceGrotesk-Regular.ttf');
+		font-weight: normal;
+		font-display: swap;
+	}
+	@font-face {
+		font-family: 'Space Grotesk';
+		src: local('Space Grotesk Bold'), local('Space-Grotesk-Bold'), local('Space Grotesk bold'),
+			local('Space-Grotesk-bold'), url('/fonts/spacegrotesk/SpaceGrotesk-Bold.ttf');
+		font-weight: bold;
+		font-display: swap;
+	}
+}
+
 :root {
 	font-family:
 		Arial,
