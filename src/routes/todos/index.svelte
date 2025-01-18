@@ -1,4 +1,4 @@
-<script context="module">
+<script module>
 	import { enhance } from '$lib/form';
 
 	// see https://kit.svelte.dev/docs#loading
@@ -25,7 +25,8 @@
 	import { scale } from 'svelte/transition';
 	import { flip } from 'svelte/animate';
 
-	export let todos;
+	/** @type {{todos: any}} */
+	let { todos = $bindable() } = $props();
 
 	async function patch(res) {
 		const todo = await res.json();
@@ -78,7 +79,7 @@
 				}}
 			>
 				<input type="hidden" name="done" value={todo.done ? '' : 'true'} />
-				<button class="toggle" aria-label="Mark todo as {todo.done ? 'not done' : 'done'}" />
+				<button class="toggle" aria-label="Mark todo as {todo.done ? 'not done' : 'done'}"></button>
 			</form>
 
 			<form
@@ -90,7 +91,7 @@
 				}}
 			>
 				<input aria-label="Edit todo" type="text" name="text" value={todo.text} />
-				<button class="save" aria-label="Save todo" />
+				<button class="save" aria-label="Save todo"></button>
 			</form>
 
 			<form
@@ -102,7 +103,7 @@
 					}
 				}}
 			>
-				<button class="delete" aria-label="Delete todo" />
+				<button class="delete" aria-label="Delete todo"></button>
 			</form>
 		</div>
 	{/each}
