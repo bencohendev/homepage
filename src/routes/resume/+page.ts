@@ -9,6 +9,12 @@ export type Job = {
 	bullets: Array<BulletPoint>;
 };
 
+export type TSkill = {
+	name: string;
+	category: 'Languages' | 'Technologies' | 'Tooling' | 'Process';
+	level: number;
+};
+
 type BulletPoint = {
 	text: string;
 	subPoints?: BulletPoint[];
@@ -149,8 +155,137 @@ const jobs: Array<Job> = [
 	},
 ];
 
+const skills: Array<TSkill> = [
+	{
+		name: 'Javascript/ES6',
+		category: 'Languages',
+		level: 90,
+	},
+	{
+		name: 'Typescript',
+		category: 'Languages',
+		level: 85,
+	},
+	{
+		name: 'HTML',
+		category: 'Languages',
+		level: 95,
+	},
+	{
+		name: 'CSS',
+		category: 'Languages',
+		level: 90,
+	},
+	{
+		name: 'C#',
+		category: 'Languages',
+		level: 80,
+	},
+	{
+		name: 'PHP',
+		category: 'Languages',
+		level: 75,
+	},
+	{
+		name: 'React',
+		category: 'Technologies',
+		level: 90,
+	},
+	{
+		name: 'Angular',
+		category: 'Technologies',
+		level: 85,
+	},
+	{
+		name: 'Vue',
+		category: 'Technologies',
+		level: 80,
+	},
+	{
+		name: 'Svelte',
+		category: 'Technologies',
+		level: 75,
+	},
+	{
+		name: 'Tailwind CSS',
+		category: 'Technologies',
+		level: 85,
+	},
+	{
+		name: 'Salesforce',
+		category: 'Technologies',
+		level: 70,
+	},
+	{
+		name: 'Git',
+		category: 'Tooling',
+		level: 90,
+	},
+	{
+		name: 'Node',
+		category: 'Tooling',
+		level: 85,
+	},
+	{
+		name: 'AWS',
+		category: 'Tooling',
+		level: 80,
+	},
+	{
+		name: 'Firebase',
+		category: 'Tooling',
+		level: 75,
+	},
+	{
+		name: 'Supabase',
+		category: 'Tooling',
+		level: 70,
+	},
+	{
+		name: 'Vercel',
+		category: 'Tooling',
+		level: 80,
+	},
+	{
+		name: 'Vite',
+		category: 'Tooling',
+		level: 85,
+	},
+	{
+		name: 'Webpack',
+		category: 'Tooling',
+		level: 80,
+	},
+	{
+		name: 'Docker',
+		category: 'Tooling',
+		level: 75,
+	},
+	{
+		name: 'SDLC',
+		category: 'Process',
+		level: 90,
+	},
+	{
+		name: 'Agile',
+		category: 'Process',
+		level: 90,
+	},
+	{
+		name: 'Scrum',
+		category: 'Process',
+		level: 85,
+	},
+	{
+		name: 'Jira',
+		category: 'Process',
+		level: 85,
+	},
+];
+
 export const load: PageLoad = () => {
 	return {
 		jobs,
+		skills,
 	};
 };

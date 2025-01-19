@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { Job } from '../../proxy+page';
+	import type { Job } from '../proxy+page';
 
 	export let job: Job;
 	const { company, title, link, date, subhead, bullets } = job;

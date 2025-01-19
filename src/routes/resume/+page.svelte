@@ -1,8 +1,9 @@
 <script>
-	import Job from './components/job/Job.svelte';
+	import Job from './components/Job.svelte';
+	import Skills from './components/Skills.svelte';
 
 	let { data } = $props();
-	const { jobs } = data;
+	const { jobs, skills } = data;
 </script>
 
 <div class="flex flex-col items-center justify-center text-home-cream">
@@ -16,5 +17,8 @@
 	</section>
 	<section>
 		<h2>Skills</h2>
+		<div>
+			<Skills {skills} />
+		</div>
 	</section>
 </div>
