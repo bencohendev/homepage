@@ -6,31 +6,33 @@
 </script>
 
 <section class="text-home-cream">
-	<div class="flex flex-col">
-		<h3>
-			<a href={link}>
-				{company}
-			</a>
-		</h3>
-		<div class="flex justify-between">
+	<div class="flex flex-col gap-4">
+		<div>
+			<h3 class="text-2xl font-bold text-home-yellow">
+				<a href={link}>
+					{company}
+				</a>
+			</h3>
 			<div>
+				{subhead}
+			</div>
+		</div>
+		<div class="flex justify-between">
+			<div class="text-xl font-bold text-home-blue">
 				{title}
 			</div>
-			<div>
+			<div class="italic">
 				{date}
 			</div>
 		</div>
-		<div>
-			{subhead}
-		</div>
 		<ul class="flex flex-col">
 			{#each bullets as bullet}
-				<li class="ml-2">
+				<li class="mb-2 ml-4">
 					{bullet.text}
 				</li>
 				{#if bullet?.subPoints?.length}
 					{#each bullet.subPoints as subPoint}
-						<li class="ml-4">
+						<li class="mb-1 ml-8">
 							{subPoint.text}
 						</li>
 					{/each}

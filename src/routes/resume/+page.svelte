@@ -14,7 +14,9 @@
 		</div>
 		<div>
 			{#each jobs as job}
-				<Job {job} />
+				<div class="mb-8">
+					<Job {job} />
+				</div>
 			{/each}
 		</div>
 	</section>
