@@ -9,7 +9,7 @@
 </script>
 
 <main class="bg-black h-full p-1 font-grotesk">
-	<div class="flex px-8 py-2">
+	<div class="mb-8 flex px-8 py-2">
 		<div class="flex w-full flex-col gap-3">
 			<Header sections={data.sections} />
 		</div>
