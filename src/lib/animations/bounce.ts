@@ -9,13 +9,13 @@ export type TransitionParams = {
 
 export function customTransition(
 	node: HTMLElement,
-	{ delay, duration, easing, css }: TransitionParams
+	{ delay, duration, easing, css }: TransitionParams,
 ) {
 	return {
 		delay,
 		duration,
 		easing,
-		css
+		css,
 	};
 }
 
@@ -23,5 +23,5 @@ export const bounceParams = {
 	delay: 0,
 	duration: 4000,
 	easing: elasticOut,
-	css: (t: number, u: number) => `transform: translateY(${u * 15}%)`
+	css: (t: number, u: number) => `transform: translateY(${u * 15}%)`,
 };

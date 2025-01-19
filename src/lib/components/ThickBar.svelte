@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { cubicOut } from 'svelte/easing';
 	import { fly } from 'svelte/transition';
 
 	export let variant: 'primary' | 'secondary' = 'primary';
@@ -16,5 +17,5 @@
 </script>
 
 {#if animate}
-	<div in:fly={{ x: flyX, delay: 500 }} class={`${color} h-4 w-full`}></div>
+	<div in:fly={{ x: flyX, delay: 500, easing: cubicOut }} class={`${color} h-4 w-full`}></div>
 {/if}
