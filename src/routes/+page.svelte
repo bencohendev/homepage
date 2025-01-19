@@ -1,9 +1,7 @@
 <script lang="ts">
-	import About from '$lib/sections/About.svelte';
+	import { elasticOut } from 'svelte/easing';
 	import { MoveDown } from 'lucide-svelte';
-
-	import { onMount, onDestroy } from 'svelte';
-	import { bounceIn, elasticOut } from 'svelte/easing';
+	import About from '$lib/sections/About.svelte';
 
 	type WooshParams = {
 		delay?: number;
