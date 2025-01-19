@@ -4,7 +4,11 @@
 	let { children } = $props();
 </script>
 
-<main class="bg-black h-lvh p-1 font-grotesk">
+<svelte:head>
+	<title>Ben Cohen Dev</title>
+</svelte:head>
+
+<main class="bg-black h-full p-1 font-grotesk">
 	{@render children?.()}
 </main>
 
