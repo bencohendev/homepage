@@ -8,17 +8,19 @@
 		{ label: 'Portfolio', url: '/portfolio' },
 		{ label: 'About', url: '/about' },
 	];
-	$effect(() => console.log(active));
 </script>
 
-<div class="flex justify-between px-8 py-2">
+<div
+	class="flex items-center
+"
+>
 	{#if active !== 'Home'}
 		<h1 class="w-content mb-8 whitespace-nowrap text-center text-6xl text-home-cream">
 			Ben Cohen-Chen
 			<ThickBar />
 		</h1>
 	{/if}
-	<ul class="flex w-full justify-end gap-6 p-10 text-xl text-home-cream">
+	<ul class="flex w-full justify-end gap-6 text-xl text-home-cream">
 		{#each links as link, i}
 			<li
 				class={active === link.label
