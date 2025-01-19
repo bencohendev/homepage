@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import { fly } from 'svelte/transition';
 
 	export let variant: 'primary' | 'secondary' = 'primary';
@@ -6,6 +7,14 @@
 
 	const color = variant === 'primary' ? 'bg-home-purple' : 'bg-home-orange';
 	const flyX = flyDirection === 'left' ? -1000 : 1000;
+
+	let animate = false;
+
+	onMount(() => {
+		animate = true;
+	});
 </script>
 
-<div in:fly={{ x: flyX }} class={`${color} h-4 w-full`}></div>
+{#if animate}
+	<div in:fly={{ x: flyX, delay: 500 }} class={`${color} h-4 w-full`}></div>
+{/if}
