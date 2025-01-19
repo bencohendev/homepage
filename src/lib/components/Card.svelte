@@ -1,6 +1,6 @@
-<script>
+<script lang="ts">
 </script>
 
-<div class="bg-home-blue">
+<div class="rounded-md bg-home-purple">
 	<slot />
 </div>

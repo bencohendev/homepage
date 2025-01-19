@@ -1,5 +1,30 @@
-<script>
+<script lang="ts">
 	import About from '$lib/sections/About.svelte';
+	import { MoveDown } from 'lucide-svelte';
+
+	import { onMount, onDestroy } from 'svelte';
+	import { bounceIn, elasticOut } from 'svelte/easing';
+
+	type WooshParams = {
+		delay?: number;
+		duration?: number;
+		easing?: (t: number) => number;
+		css?: (t: number, u: number) => string;
+	};
+	const wooshParams = {
+		delay: 0,
+		duration: 4000,
+		easing: elasticOut,
+		css: (t: number, u: number) => `transform: translateY(${u * 10}%)`
+	};
+	function whoosh(node: HTMLElement, { delay, duration, easing, css }: WooshParams) {
+		return {
+			delay,
+			duration,
+			easing,
+			css
+		};
+	}
 </script>
 
 <svelte:head>
@@ -12,6 +37,9 @@
 		<p class="mb-4 text-xl font-normal">Typescript | React | Svelte</p>
 		<p class="text-white text-4xl">Let's talk: ben@bencohen.dev</p>
 	</section>
+	<div class="an" in:whoosh={wooshParams}>
+		<MoveDown color={'white'} size={180} />
+	</div>
 	<section>
 		<About />
 	</section>
@@ -25,8 +53,4 @@
 </div>
 
 <style>
-	a {
-		margin: 0 1rem;
-		text-decoration: none;
-	}
 </style>
