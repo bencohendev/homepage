@@ -1,6 +1,6 @@
 import { elasticOut } from 'svelte/easing';
 
-export type TransitionParams = {
+export type TTransitionParams = {
 	delay?: number;
 	duration?: number;
 	easing?: (t: number) => number;
@@ -9,7 +9,7 @@ export type TransitionParams = {
 
 export function customTransition(
 	node: HTMLElement,
-	{ delay, duration, easing, css }: TransitionParams,
+	{ delay, duration, easing, css }: TTransitionParams,
 ) {
 	return {
 		delay,

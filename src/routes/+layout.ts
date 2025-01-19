@@ -1,6 +1,6 @@
 import type { LayoutLoad } from './$types';
 
-export type Sections = Array<{
+export type TSections = Array<{
 	label: string;
 	slug: string;
 }>;

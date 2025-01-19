@@ -1,10 +1,10 @@
 <script lang="ts">
 	import { page } from '$app/state';
 	import ThinBar from '$lib/components/ThinBar.svelte';
-	import type { Sections } from '../../routes/proxy+layout';
+	import type { TSections } from '../../routes/proxy+layout';
 	import SubHeader from './SubHeader.svelte';
 
-	let { sections }: { sections: Sections } = $props();
+	let { sections }: { sections: TSections } = $props();
 	let active = $state(page.url.pathname);
 </script>
 

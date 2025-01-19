@@ -1,12 +1,12 @@
 import type { PageLoad } from './$types';
 
-export type Job = {
+export type TJob = {
 	company: string;
 	title: string;
 	link: string;
 	date: string;
 	subhead: string;
-	bullets: Array<BulletPoint>;
+	bullets: Array<TBulletPoint>;
 };
 
 export type TSkill = {
@@ -15,12 +15,12 @@ export type TSkill = {
 	level: number;
 };
 
-type BulletPoint = {
+type TBulletPoint = {
 	text: string;
-	subPoints?: BulletPoint[];
+	subPoints?: TBulletPoint[];
 };
 
-const jobs: Array<Job> = [
+const jobs: Array<TJob> = [
 	{
 		company: 'Shift Paradigm',
 		title: 'Senior Developer & Tech Lead',
