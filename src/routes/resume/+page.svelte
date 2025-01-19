@@ -8,7 +8,7 @@
 </script>
 
 <div class="flex justify-between gap-12 px-12 text-home-cream">
-	<section class="w-2/3">
+	<section class="">
 		<div class="mb-4">
 			<h2 class="w-fit text-4xl font-bold">Experience <ThinBar /></h2>
 		</div>
@@ -20,7 +20,7 @@
 			{/each}
 		</div>
 	</section>
-	<section class="w-1/3">
+	<section class="flex flex-col">
 		<div class="mb-4">
 			<h2 class="w-fit text-4xl font-bold">Skills <ThinBar /></h2>
 		</div>

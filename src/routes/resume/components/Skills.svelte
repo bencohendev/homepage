@@ -9,27 +9,27 @@
 	const process = skills.filter((skill) => skill.category === 'Process');
 </script>
 
-<section>
+<section class="flex flex-col gap-4">
 	<div>
-		<h3>Languages</h3>
+		<h3 class="text-2xl font-bold text-home-yellow">Languages</h3>
 		{#each languages as skill}
 			<Skill {skill} />
 		{/each}
 	</div>
 	<div>
-		<h3>Technologies</h3>
+		<h3 class="text-2xl font-bold text-home-yellow">Technologies</h3>
 		{#each technologies as skill}
 			<Skill {skill} />
 		{/each}
 	</div>
 	<div>
-		<h3>Tooling</h3>
+		<h3 class="text-2xl font-bold text-home-yellow">Tooling</h3>
 		{#each tooling as skill}
 			<Skill {skill} />
 		{/each}
 	</div>
 	<div>
-		<h3>Process</h3>
+		<h3 class="text-2xl font-bold text-home-yellow">Process</h3>
 		{#each process as skill}
 			<Skill {skill} />
 		{/each}
