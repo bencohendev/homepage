@@ -17,10 +17,11 @@
 				{subhead}
 			</div>
 		</div>
-		<div class="flex justify-between">
+		<div class="flex items-center gap-4">
 			<div class="text-xl font-bold text-home-blue">
 				{title}
 			</div>
+			|
 			<div class="italic">
 				{date}
 			</div>
