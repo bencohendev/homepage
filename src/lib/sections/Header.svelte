@@ -11,11 +11,9 @@
 <div class="flex flex-col gap-4">
 	<div class="flex flex-col items-center gap-4 lg:flex-row">
 		{#if active !== 'Home'}
-			<a href={'/'} onclick={() => (active = '/')}
-				><h1 class="whitespace-nowrap text-center text-4xl text-home-cream lg:text-6xl">
-					Ben Cohen-Chen
-				</h1></a
-			>
+			<h1 class="whitespace-nowrap text-center text-4xl text-home-cream lg:text-6xl">
+				<a href={'/'} onclick={() => (active = '/')}> Ben Cohen-Chen </a>
+			</h1>
 		{/if}
 		<ul class="flex w-full justify-center gap-2 text-home-cream lg:justify-end lg:gap-6 lg:text-xl">
 			{#each sections as link, i}
