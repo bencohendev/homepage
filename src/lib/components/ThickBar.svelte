@@ -19,7 +19,7 @@
 {#if animate}
 	<div class="relative">
 		<div
-			in:fly={{ x: flyX, delay: 500, easing: cubicOut }}
+			in:fly={{ x: flyX, delay: 25, easing: cubicOut }}
 			class={`${color} absolute h-4 w-full`}
 		></div>
 	</div>
