@@ -1,5 +1,5 @@
 <section class="flex flex-col items-center gap-6 p-8">
-	<p class="w-1/2 text-center text-lg">
+	<p class="w-full text-center text-lg sm:w-1/2">
 		I believe collaboration is the key to building excellent software. Nothing makes me happier than
 		<span class="font-bold text-home-blue">learning</span> something,
 		<span class="font-bold text-home-blue">teaching</span>
