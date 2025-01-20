@@ -2,8 +2,8 @@
 	import { Github, Linkedin, Phone, MapPinned, Mail } from 'lucide-svelte';
 </script>
 
-<div class="flex justify-between">
-	<div class="flex gap-4 text-home-cream">
+<div class="flex justify-center gap-6 sm:justify-between sm:gap-0">
+	<div class="flex gap-6 text-home-cream">
 		<a href="https://github.com/bencohendev" target="_blank">
 			<Github color={'white'} />
 		</a>
@@ -12,7 +12,8 @@
 			<Linkedin color={'white'} />
 		</a>
 	</div>
-	<div class="flex gap-4 text-home-cream">
+	<div class="text-home-cream sm:hidden">|</div>
+	<div class="flex gap-6 text-home-cream">
 		<a href="mailto:ben@bencohen.dev">
 			<Mail color={'white'} />
 		</a>
