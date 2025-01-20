@@ -179,12 +179,12 @@ const skills: Array<TSkill> = [
 	{
 		name: 'C#',
 		category: 'Languages',
-		level: 80,
+		level: 25,
 	},
 	{
 		name: 'PHP',
 		category: 'Languages',
-		level: 75,
+		level: 25,
 	},
 	{
 		name: 'React',
@@ -194,27 +194,27 @@ const skills: Array<TSkill> = [
 	{
 		name: 'Angular',
 		category: 'Technologies',
-		level: 85,
+		level: 75,
 	},
 	{
 		name: 'Vue',
 		category: 'Technologies',
-		level: 80,
+		level: 66,
 	},
 	{
 		name: 'Svelte',
 		category: 'Technologies',
-		level: 75,
+		level: 80,
 	},
 	{
 		name: 'Tailwind CSS',
 		category: 'Technologies',
-		level: 85,
+		level: 95,
 	},
 	{
 		name: 'Salesforce',
 		category: 'Technologies',
-		level: 70,
+		level: 66,
 	},
 	{
 		name: 'Git',
@@ -224,7 +224,7 @@ const skills: Array<TSkill> = [
 	{
 		name: 'Node',
 		category: 'Tooling',
-		level: 85,
+		level: 75,
 	},
 	{
 		name: 'AWS',
@@ -239,17 +239,17 @@ const skills: Array<TSkill> = [
 	{
 		name: 'Supabase',
 		category: 'Tooling',
-		level: 70,
+		level: 75,
 	},
 	{
 		name: 'Vercel',
 		category: 'Tooling',
-		level: 80,
+		level: 75,
 	},
 	{
 		name: 'Vite',
 		category: 'Tooling',
-		level: 85,
+		level: 75,
 	},
 	{
 		name: 'Webpack',
@@ -259,7 +259,7 @@ const skills: Array<TSkill> = [
 	{
 		name: 'Docker',
 		category: 'Tooling',
-		level: 75,
+		level: 66,
 	},
 	{
 		name: 'SDLC',
@@ -274,12 +274,12 @@ const skills: Array<TSkill> = [
 	{
 		name: 'Scrum',
 		category: 'Process',
-		level: 85,
+		level: 90,
 	},
 	{
 		name: 'Jira',
 		category: 'Process',
-		level: 85,
+		level: 90,
 	},
 ];
 

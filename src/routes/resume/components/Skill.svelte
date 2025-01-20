@@ -5,7 +5,7 @@
 	import { onMount } from 'svelte';
 
 	let progress = new Tween(0, {
-		duration: 400,
+		duration: 900,
 		easing: cubicOut,
 	});
 
@@ -14,18 +14,19 @@
 	progress.target = level * 0.01;
 
 	let animate = false;
-	let barColor = 'bg-red-900';
+	let barColor = '';
 	barColor = getProgressColor();
 	function getProgressColor(): string {
 		switch (true) {
 			case level <= 49:
-				barColor = 'bg-red-900';
+				barColor = '[&::-webkit-progress-value]:bg-home-red [&::-moz-progress-bar]:bg-home-red';
 				break;
 			case level > 49 && level < 75:
-				barColor = 'bg-home-yellow';
+				barColor =
+					'[&::-webkit-progress-value]:bg-home-yellow [&::-moz-progress-bar]:bg-home-yellow';
 				break;
 			case level >= 75:
-				barColor = 'bg-home-orange';
+				barColor = '[&::-webkit-progress-value]:bg-home-green [&::-moz-progress-bar]:bg-home-green';
 				break;
 			default:
 				break;
@@ -48,11 +49,16 @@
 				<progress
 					id={name}
 					class={`[&::-webkit-progress-bar]:bg-slate-300
-           [&::-webkit-progress-value]:${barColor}
-            [&::-moz-progress-bar]:${barColor}
-             w-56
-              [&::-webkit-progress-bar]:rounded-lg [&::-webkit-progress-value]:rounded-lg`}
+          ${barColor}
+          w-56
+          [&::-webkit-progress-bar]:rounded-lg [&::-webkit-progress-value]:rounded-lg`}
 					value={progress.current}
+				></progress>
+			{:else}
+				<progress
+					id={name}
+					class={`[&::-webkit-progress-bar]:bg-slate-300 w-56 [&::-webkit-progress-bar]:rounded-lg [&::-webkit-progress-value]:rounded-lg`}
+					value={0}
 				></progress>
 			{/if}
 		</div>

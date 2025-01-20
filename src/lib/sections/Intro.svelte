@@ -11,7 +11,7 @@
 </p>
 <div class="mb-4 flex w-full justify-center">
 	<img
-		class="w-96"
+		class="w-96 rounded-full"
 		src="/images/cartoon-ben-tulips.jpg"
 		alt="A stylized cartoon of Ben sitting in front of a field of tulips"
 	/>

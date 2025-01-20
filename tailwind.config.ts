@@ -11,12 +11,14 @@ export default {
 					cream: '#FEFFEC',
 					orange: '#ef8354',
 					yellow: '#f1d302',
-					blue: '#508991'
-				}
+					blue: '#508991',
+					green: '#447604',
+					red: '#BF0603',
+				},
 			},
-			fontFamily: { grotesk: ['Space Grotesk'] }
-		}
+			fontFamily: { grotesk: ['Space Grotesk'] },
+		},
 	},
 
-	plugins: []
+	plugins: [],
 } satisfies Config;
