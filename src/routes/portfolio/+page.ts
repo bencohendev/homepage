@@ -11,7 +11,7 @@ export type TProject = {
 const projects: Array<TProject> = [
 	{
 		title: 'Theme Generator',
-		link: 'theme.bencohen.dev',
+		link: 'https://theme.bencohen.dev',
 		date: '2022',
 		description: `This one was the result of a random rabbit hole I fell down (we've all been there :D). I got obsessed with vscode theming
                   and decided to build myself a nifty little tool to help me make themes faster. The theme template I use is based on the 
@@ -20,7 +20,7 @@ const projects: Array<TProject> = [
 	},
 	{
 		title: 'Tone Generator',
-		link: 'pitch.bencohen.dev',
+		link: 'https://pitch.bencohen.dev',
 		date: '2020',
 		description: `As a practicing saxophonist. 
       I spend some significant amount of time every day playing long tones (literally just playing a note for an extended period of time to work on tone, timbre, intonation, etc.). 
