@@ -1,5 +1,5 @@
 <script>
-	import { Github, Linkedin, Phone, Map, Mail } from 'lucide-svelte';
+	import { Github, Linkedin, Phone, MapPinned, Mail } from 'lucide-svelte';
 </script>
 
 <div class="flex justify-between">
@@ -22,7 +22,7 @@
 		</a>
 		|
 		<a href="https://www.google.com/maps/place/Portland,+OR/">
-			<Map color={'white'} />
+			<MapPinned color={'white'} />
 		</a>
 	</div>
 </div>
