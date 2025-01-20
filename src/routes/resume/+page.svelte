@@ -13,8 +13,8 @@
 	href="/Resume_Ben_Cohen-Chen.pdf"
 	download="Resume_Ben_Cohen-Chen.pdf">Download as PDF <Download color={'white'} /></a
 >
-<div class="flex justify-between gap-12 px-12 text-home-cream">
-	<section class="">
+<section class="flex flex-col justify-between gap-12 px-12 text-home-cream lg:flex-row">
+	<div class="">
 		<div class="mb-4">
 			<Heading text="Experience" />
 		</div>
@@ -25,13 +25,13 @@
 				</div>
 			{/each}
 		</div>
-	</section>
-	<section class="flex flex-col">
+	</div>
+	<div class="flex flex-col">
 		<div class="mb-4">
 			<Heading text="Skills" />
 		</div>
 		<div>
 			<Skills {skills} />
 		</div>
-	</section>
-</div>
+	</div>
+</section>
