@@ -9,7 +9,7 @@
 	<div class="flex flex-col gap-4">
 		<div>
 			<h3 class="text-2xl font-bold text-home-yellow">
-				<a href={link}>
+				<a href={link} target="_blank">
 					{company}
 				</a>
 			</h3>

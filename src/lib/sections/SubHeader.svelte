@@ -4,11 +4,11 @@
 
 <div class="flex justify-between">
 	<div class="flex gap-4 text-home-cream">
-		<a href="https://github.com/bencohendev">
+		<a href="https://github.com/bencohendev" target="_blank">
 			<Github color={'white'} />
 		</a>
 		|
-		<a href="https://www.linkedin.com/in/ben-cohen-chen/">
+		<a href="https://www.linkedin.com/in/ben-cohen-chen/" target="_blank">
 			<Linkedin color={'white'} />
 		</a>
 	</div>
@@ -21,7 +21,7 @@
 			<Phone color={'white'} />
 		</a>
 		|
-		<a href="https://www.google.com/maps/place/Portland,+OR/">
+		<a href="https://www.google.com/maps/place/Portland,+OR/" target="_blank">
 			<MapPinned color={'white'} />
 		</a>
 	</div>
