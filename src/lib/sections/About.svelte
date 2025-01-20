@@ -1,9 +1,9 @@
 <script lang="ts">
-	import ThinBar from '$lib/components/ThinBar.svelte';
+	import Heading from '$lib/components/Heading.svelte';
 </script>
 
 <section class="flex flex-col items-center gap-12 text-home-cream">
-	<h2 class="w-fit text-4xl font-bold">About <ThinBar /></h2>
+	<Heading text="About" />
 	<p class="w-1/2 text-home-cream">
 		Coding started as a means to an end, but has become my passion Shortly after college I moved to
 		NYC to pursue my dreams of becoming a jazz saxophonist. After a long stint of restaurant work to

@@ -1,7 +1,3 @@
-<script>
-	import ThickBar from '$lib/components/ThickBar.svelte';
-</script>
-
 <p class="mb-4 text-lg">
 	I believe collaboration is the key to building excellent software. Nothing makes me happier than
 	<span class="font-bold text-home-blue">learning</span> something,
