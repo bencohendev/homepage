@@ -16,7 +16,7 @@
 	<div class="flex">
 		{description}
 	</div>
-	<div class="p-8 transition-all hover:scale-110">
+	<div class="transition-all hover:scale-110 lg:p-8">
 		<a href={link} target="_blank">
 			<img src={image} alt="" />
 		</a>

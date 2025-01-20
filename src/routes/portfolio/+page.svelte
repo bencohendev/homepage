@@ -15,7 +15,7 @@
 			>Resume Page</a
 		>
 	</p>
-	<div class="flex">
+	<div class="flex flex-col lg:flex-row">
 		{#each projects as project}
 			<Project {project} />
 		{/each}
