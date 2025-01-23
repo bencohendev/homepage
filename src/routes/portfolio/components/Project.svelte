@@ -1,5 +1,4 @@
 <script lang="ts">
-	import Heading from '$lib/components/Heading.svelte';
 	import type { TProject } from '../proxy+page';
 
 	export let project: TProject;
@@ -7,7 +6,7 @@
 	const { title, description, image, link } = project;
 </script>
 
-<div class="mb-8 flex flex-1 flex-col items-stretch gap-4 p-8">
+<div class="mb-8 flex flex-1 flex-col items-stretch gap-4 px-8">
 	<div>
 		<a class="text-home-yellow" href={link} target="_blank">
 			<h3 class="w-fit text-2xl font-bold text-home-yellow hover:scale-110">{title}</h3>
