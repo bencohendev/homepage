@@ -177,19 +177,19 @@ const skills: Array<TSkill> = [
 		level: 95,
 	},
 	{
-		name: 'SQL',
-		category: 'Languages',
-		level: 66,
-	},
-	{
 		name: 'C#',
 		category: 'Languages',
-		level: 45,
+		level: 69,
+	},
+	{
+		name: 'SQL',
+		category: 'Languages',
+		level: 60,
 	},
 	{
 		name: 'PHP',
 		category: 'Languages',
-		level: 35,
+		level: 50,
 	},
 	{
 		name: 'React',

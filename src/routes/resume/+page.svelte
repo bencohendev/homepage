@@ -8,7 +8,7 @@
 	const { jobs, skills } = data;
 </script>
 
-<div class="mb-4 flex px-12 text-home-cream">
+<div class="mb-4 flex justify-center px-12 text-home-cream sm:justify-end">
 	<a
 		class="flex gap-2 hover:scale-110"
 		href="/Resume_Ben_Cohen-Chen.pdf"
