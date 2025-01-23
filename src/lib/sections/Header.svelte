@@ -12,7 +12,9 @@
 <div class="flex flex-col gap-4">
 	<div class="flex flex-col items-center gap-4 lg:flex-row">
 		{#if active !== 'Home'}
-			<h1 class="whitespace-nowrap text-center text-4xl text-home-cream lg:text-6xl">
+			<h1
+				class="whitespace-nowrap text-center text-4xl text-home-cream hover:scale-105 lg:text-6xl"
+			>
 				<a href={'/'} onclick={() => (active = '/')}> Ben Cohen-Chen </a>
 			</h1>
 		{/if}
