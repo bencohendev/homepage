@@ -8,11 +8,14 @@
 	const { jobs, skills } = data;
 </script>
 
-<a
-	class="mb-4 flex px-12 text-home-cream"
-	href="/Resume_Ben_Cohen-Chen.pdf"
-	download="Resume_Ben_Cohen-Chen.pdf">Download as PDF <Download color={'white'} /></a
->
+<div class="mb-4 flex px-12 text-home-cream">
+	<a
+		class="flex gap-2 hover:scale-110"
+		href="/Resume_Ben_Cohen-Chen.pdf"
+		download="Resume_Ben_Cohen-Chen.pdf"
+		>Download as PDF <span class="relative bottom-0.5"><Download color={'white'} /></span>
+	</a>
+</div>
 <section class="flex flex-col justify-between gap-12 px-12 text-home-cream lg:flex-row">
 	<div class="">
 		<div class="mb-4">

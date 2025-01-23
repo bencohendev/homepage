@@ -8,7 +8,7 @@
 <section class="text-home-cream">
 	<div class="flex flex-col gap-4">
 		<div>
-			<h3 class="text-2xl font-bold text-home-yellow">
+			<h3 class="w-fit text-2xl font-bold text-home-yellow hover:scale-110">
 				<a href={link} target="_blank">
 					{company}
 				</a>
