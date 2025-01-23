@@ -1,4 +1,5 @@
 <script lang="ts">
+	import SubNavItem from '$lib/components/SubNavItem.svelte';
 	import { Github, Linkedin, Phone, MapPinned, Mail } from 'lucide-svelte';
 
 	let active: number = $state(0);
@@ -6,54 +7,26 @@
 
 <div class="flex justify-center gap-6 sm:justify-between sm:gap-0">
 	<div class=" flex gap-6 text-home-cream">
-		<a
-			onmouseenter={() => (active = 1)}
-			onmouseleave={() => (active = 0)}
-			class={`${active && active !== 1 ? 'scale-75 opacity-75' : ''} hover:scale-110`}
-			href="https://github.com/bencohendev"
-			target="_blank"
-		>
-			<Github color={'white'} />
-		</a>
+		<SubNavItem link="https://github.com/bencohendev" Icon={Github} bind:active index={1} />
 		|
-		<a
-			onmouseenter={() => (active = 2)}
-			onmouseleave={() => (active = 0)}
-			class={`${active && active !== 2 ? 'scale-75 opacity-75' : ''} hover:scale-110`}
-			href="https://www.linkedin.com/in/ben-cohen-chen/"
-			target="_blank"
-		>
-			<Linkedin color={'white'} />
-		</a>
+		<SubNavItem
+			link="https://www.linkedin.com/in/ben-cohen-chen/"
+			Icon={Linkedin}
+			bind:active
+			index={2}
+		/>
 	</div>
 	<div class="text-home-cream sm:hidden">|</div>
 	<div class="flex gap-6 text-home-cream">
-		<a
-			onmouseenter={() => (active = 3)}
-			onmouseleave={() => (active = 0)}
-			href="mailto:ben@bencohen.dev"
-			class={`${active && active !== 3 ? 'scale-75 opacity-75' : ''} hover:scale-110`}
-		>
-			<Mail color={'white'} />
-		</a>
+		<SubNavItem link="mailto:ben@bencohen.dev" Icon={Mail} bind:active index={3} />
 		|
-		<a
-			onmouseenter={() => (active = 4)}
-			onmouseleave={() => (active = 0)}
-			class={`${active && active !== 4 ? 'scale-75 opacity-75' : ''} hover:scale-110`}
-			href="tel:9316259833"
-		>
-			<Phone color={'white'} />
-		</a>
+		<SubNavItem link="tel:9316259833" Icon={Phone} bind:active index={4} />
 		|
-		<a
-			onmouseenter={() => (active = 5)}
-			onmouseleave={() => (active = 0)}
-			class={`${active && active !== 5 ? 'scale-75 opacity-75' : ''} hover:scale-110`}
-			href="https://www.google.com/maps/place/Portland,+OR/"
-			target="_blank"
-		>
-			<MapPinned color={'white'} />
-		</a>
+		<SubNavItem
+			link="https://www.google.com/maps/place/Portland,+OR/"
+			Icon={MapPinned}
+			bind:active
+			index={5}
+		/>
 	</div>
 </div>
