@@ -6,6 +6,7 @@
 
 	let { sections }: { sections: TSections } = $props();
 	let active = $state(page.url.pathname);
+	let hovered = $state(0);
 </script>
 
 <div class="flex flex-col gap-4">
@@ -18,9 +19,15 @@
 		<ul class="flex w-full justify-center gap-2 text-home-cream lg:justify-end lg:gap-6 lg:text-xl">
 			{#each sections as link, i}
 				<li
-					class={active === link.slug
-						? 'font-bold underline decoration-home-orange underline-offset-4'
-						: ''}
+					class={`
+          ${
+						active === link.slug
+							? 'font-bold underline decoration-home-orange underline-offset-4'
+							: 'hover:scale-110'
+					}
+            ${hovered && hovered !== i + 1 ? 'scale-90 opacity-75' : ''}`}
+					onmouseenter={() => (hovered = i + 1)}
+					onmouseleave={() => (hovered = 0)}
 				>
 					<a href={link.slug} onclick={() => (active = link.slug)}>
 						{link.label}

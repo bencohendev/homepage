@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Github, Linkedin, Phone, MapPinned, Mail } from 'lucide-svelte';
 
-	let active: number | null = $state(0);
+	let active: number = $state(0);
 </script>
 
 <div class="flex justify-center gap-6 sm:justify-between sm:gap-0">
