@@ -16,7 +16,7 @@
 		>Download as PDF <span class="relative bottom-0.5"><Download color={'white'} /></span>
 	</a>
 </div>
-<section class="flex flex-col justify-between gap-12 px-12 text-home-cream lg:flex-row">
+<section class="flex flex-col justify-center gap-24 px-12 text-home-cream lg:flex-row">
 	<div class="">
 		<div class="mb-4">
 			<Heading text="Experience" />
@@ -29,12 +29,14 @@
 			{/each}
 		</div>
 	</div>
-	<div class="flex flex-col">
-		<div class="mb-4">
-			<Heading text="Skills" />
-		</div>
+	<div class="flex flex-col items-center sm:items-start">
 		<div>
-			<Skills {skills} />
+			<div class="mb-4">
+				<Heading text="Skills" />
+			</div>
+			<div>
+				<Skills {skills} />
+			</div>
 		</div>
 	</div>
 </section>

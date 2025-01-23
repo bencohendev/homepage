@@ -32,7 +32,7 @@ const jobs: Array<TJob> = [
 				text: 'Architected full tech stack leveraging AWS, React, Salesforce, and ASP.NET Core that unlocked design potential and sped up feature delivery by 30%',
 			},
 			{
-				text: 'Led a team of 6 engineers, owning the following',
+				text: 'Led a team of 6 engineers, owning the following:',
 				subPoints: [
 					{
 						text: 'Daily PR reviews with entire team, fostering shared ownership of codebase',
