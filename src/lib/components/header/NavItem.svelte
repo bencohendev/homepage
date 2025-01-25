@@ -7,13 +7,13 @@
 			: 'hover:scale-110',
 	);
 
-	let hoveredClass = $derived(hovered && hovered !== i ? 'sm:scale-90 sm:opacity-75' : '');
+	let hoveredClass = $derived(hovered > -1 && hovered !== i ? 'sm:scale-90 sm:opacity-75' : '');
 </script>
 
 <li
 	class={`${activeClass}  ${hoveredClass}`}
 	onmouseenter={() => (hovered = i)}
-	onmouseleave={() => (hovered = 0)}
+	onmouseleave={() => (hovered = -1)}
 >
 	<a href={link.slug} onclick={() => (active = link.slug)}>
 		{link.label}

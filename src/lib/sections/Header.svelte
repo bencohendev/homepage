@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { TSections } from '../../routes/proxy+layout';
+	import type { TSections } from '../../routes/+layout';
 	import { page } from '$app/state';
 	import { Menu } from 'lucide-svelte';
 	import { X as Close } from 'lucide-svelte';
@@ -10,7 +10,7 @@
 
 	let { sections, showMenu = $bindable() }: { sections: TSections; showMenu: boolean } = $props();
 	let active = $state(page.url.pathname);
-	let hovered = $state(0);
+	let hovered = $state(-1);
 </script>
 
 <div class="flex flex-col gap-4">
@@ -27,7 +27,7 @@
 			class="hidden w-full justify-center gap-2 text-home-cream sm:flex sm:justify-end lg:gap-6 lg:text-xl"
 		>
 			{#each sections as link, i}
-				<NavItem bind:active {link} bind:hovered i={i + 1} lastItem={i === sections.length - 1} />
+				<NavItem bind:active {link} bind:hovered {i} lastItem={i === sections.length - 1} />
 			{/each}
 		</ul>
 	</div>
