@@ -1,15 +1,17 @@
 <script lang="ts">
 	let { active = $bindable(), link, hovered = $bindable(), i, lastItem } = $props();
 
-	const activeClass =
+	let activeClass = $derived(
 		active === link.slug
 			? 'font-bold underline decoration-home-orange underline-offset-4'
-			: 'hover:scale-110';
+			: 'hover:scale-110',
+	);
+
+	let hoveredClass = $derived(hovered && hovered !== i ? 'scale-90 opacity-75' : '');
 </script>
 
 <li
-	class={`
-${activeClass} ${hovered && hovered !== i ? 'scale-90 opacity-75' : ''}`}
+	class={`${activeClass}  ${hoveredClass}`}
 	onmouseenter={() => (hovered = i)}
 	onmouseleave={() => (hovered = 0)}
 >

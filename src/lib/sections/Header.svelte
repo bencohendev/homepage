@@ -1,8 +1,8 @@
 <script lang="ts">
+	import type { TSections } from '../../routes/proxy+layout';
 	import { page } from '$app/state';
 	import NavItem from '$lib/components/header/NavItem.svelte';
 	import ThinBar from '$lib/components/ThinBar.svelte';
-	import type { TSections } from '../../routes/proxy+layout';
 	import SubHeader from './SubHeader.svelte';
 
 	let { sections }: { sections: TSections } = $props();
