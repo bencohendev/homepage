@@ -18,11 +18,13 @@
 		<h1 class="whitespace-nowrap text-center text-4xl text-home-cream hover:scale-105 lg:text-6xl">
 			<a href={'/'} onclick={() => (active = '/')}> Ben Cohen-Chen </a>
 		</h1>
-		{#if showMenu}
-			<Close color={'white'} onclick={() => (showMenu = !showMenu)} />
-		{:else}
-			<Menu color={'white'} onclick={() => (showMenu = !showMenu)} />
-		{/if}
+		<div class="block sm:hidden">
+			{#if showMenu}
+				<Close color={'white'} onclick={() => (showMenu = !showMenu)} />
+			{:else}
+				<Menu color={'white'} onclick={() => (showMenu = !showMenu)} />
+			{/if}
+		</div>
 		<ul
 			class="hidden w-full justify-center gap-2 text-home-cream sm:flex sm:justify-end lg:gap-6 lg:text-xl"
 		>
