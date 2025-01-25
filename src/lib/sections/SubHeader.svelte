@@ -2,7 +2,7 @@
 	import SubNavItem from '$lib/components/header/SubNavItem.svelte';
 	import { Github, Linkedin, Phone, MapPinned, Mail } from 'lucide-svelte';
 
-	let hovered: number = $state(0);
+	let hovered: number = $state(-1);
 </script>
 
 <div class="flex justify-center gap-6 sm:justify-between sm:gap-0">
