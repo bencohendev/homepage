@@ -36,7 +36,11 @@
 		<SubHeader />
 	</div>
 	{#if showMenu}
-		<div in:slide={{ duration: 500 }} class="flex h-lvh flex-col gap-8 bg-black">
+		<div
+			in:slide={{ duration: 500 }}
+			out:slide={{ duration: 500 }}
+			class="flex h-lvh flex-col gap-8 bg-black"
+		>
 			<ul class="flex w-full flex-col items-center justify-center gap-6 text-2xl text-home-cream">
 				{#each sections as link, i}
 					<NavItem bind:active {link} bind:hovered i={i + 1} lastItem={i === sections.length - 1} />
