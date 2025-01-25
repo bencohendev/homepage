@@ -7,7 +7,7 @@
 			: 'hover:scale-110',
 	);
 
-	let hoveredClass = $derived(hovered && hovered !== i ? 'scale-90 opacity-75' : '');
+	let hoveredClass = $derived(hovered && hovered !== i ? 'sm:scale-90 sm:opacity-75' : '');
 </script>
 
 <li
@@ -21,5 +21,5 @@
 </li>
 
 {#if !lastItem}
-	|
+	<span class="hidden sm:block">|</span>
 {/if}
