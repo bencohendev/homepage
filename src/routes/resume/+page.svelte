@@ -17,7 +17,7 @@
 	</a>
 </div>
 <section class="flex flex-col justify-center gap-24 px-12 text-home-cream lg:flex-row">
-	<div class="">
+	<div>
 		<div class="mb-4">
 			<Heading text="Experience" />
 		</div>
