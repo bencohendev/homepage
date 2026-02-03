@@ -12,7 +12,7 @@
 	<a
 		class="flex gap-2 hover:scale-110"
 		href="/Resume_Ben_Cohen-Chen.pdf"
-		download="Resume_Ben_Cohen-Chen.pdf"
+		download="Ben_Cohen-Chen_Senior_Engineer.pdf"
 		>Download as PDF <span class="relative bottom-0.5"><Download color={'white'} /></span>
 	</a>
 </div>
