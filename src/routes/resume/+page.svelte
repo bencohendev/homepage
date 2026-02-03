@@ -11,7 +11,7 @@
 <div class="mb-4 flex justify-center px-12 text-home-cream sm:justify-end">
 	<a
 		class="flex gap-2 hover:scale-110"
-		href="/Resume_Ben_Cohen-Chen.pdf"
+		href="/Ben_Cohen-Chen_Senior_Engineer.pdf"
 		download="Ben_Cohen-Chen_Senior_Engineer.pdf"
 		>Download as PDF <span class="relative bottom-0.5"><Download color={'white'} /></span>
 	</a>
