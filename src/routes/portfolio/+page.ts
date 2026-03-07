@@ -9,6 +9,13 @@ export type TProject = {
 };
 
 const projects: Array<TProject> = [
+    {
+    title: 'Swashbuckler',
+    link: 'https://swashbuckler.quest',
+    date: '2026-current',
+    description: 'Swashbuckler is a full-stack knowledge management app built with Next.js, Supabase, and a rich block editor powered by Plate.js. It supports custom entry types with user-defined properties, a visual knowledge graph, real-time collaborative editing via Yjs CRDTs, multi-workspace support, and a global search experience. The data layer abstracts over both Supabase (PostgreSQL) and IndexedDB to support authenticated and offline/guest modes from the same interface. Built as a Turborepo monorepo with a companion documentation site, it includes features like templates, saved views, kanban boards, custom themes, tagging, sharing with per-entry exclusions, and analytics consent flows — all with full TypeScript, accessibility, and end-to-end test coverage.',
+    image: 'images/swashbuckler.png',
+  },
 	{
 		title: 'Theme Generator',
 		link: 'https://theme.bencohen.dev',

@@ -17,8 +17,11 @@
 				>Resume Page</a
 			>
 		</p>
-		<div class="flex flex-col lg:flex-row">
-			{#each projects as project}
+		<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+			<div class="sm:col-span-2">
+				<Project project={projects[0]} />
+			</div>
+			{#each projects.slice(1) as project}
 				<Project {project} />
 			{/each}
 		</div>
