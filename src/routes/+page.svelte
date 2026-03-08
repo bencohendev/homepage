@@ -10,5 +10,3 @@
 	<Intro />
 </section>
 
-<style>
-</style>

@@ -4,7 +4,7 @@
 	import { Menu } from 'lucide-svelte';
 	import { X as Close } from 'lucide-svelte';
 	import NavItem from '$lib/components/header/NavItem.svelte';
-	import ThinBar from '$lib/components/ThinBar.svelte';
+	import Bar from '$lib/components/Bar.svelte';
 	import SubHeader from './SubHeader.svelte';
 	import { slide } from 'svelte/transition';
 
@@ -33,7 +33,7 @@
 			{/each}
 		</ul>
 	</div>
-	<ThinBar variant="primary" />
+	<Bar variant="primary" />
 	<div class="hidden sm:block">
 		<SubHeader />
 	</div>
@@ -48,7 +48,7 @@
 					<NavItem bind:active {link} bind:hovered i={i + 1} lastItem={i === sections.length - 1} />
 				{/each}
 			</ul>
-			<ThinBar variant="primary" />
+			<Bar variant="primary" />
 			<SubHeader />
 		</div>
 	{/if}

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import ThinBar from './ThinBar.svelte';
+	import Bar from './Bar.svelte';
 	export let text;
 	export let size: keyof typeof textSize = 'lg';
 	const textSize = {
@@ -8,4 +8,4 @@
 	};
 </script>
 
-<h2 class={`w-fit ${textSize[size]} font-bold`}>{text} <ThinBar /></h2>
+<h2 class={`w-fit ${textSize[size]} font-bold`}>{text} <Bar /></h2>

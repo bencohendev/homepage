@@ -3,7 +3,7 @@
 	import Project from './components/Project.svelte';
 
 	let { data } = $props();
-	const { projects } = data;
+	let projects  = $derived(data.projects);
 </script>
 
 <section class="flex w-full flex-col items-center justify-center px-12 text-home-cream">

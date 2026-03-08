@@ -1,11 +1,10 @@
-<script>
+<script lang="ts">
 	import { Download } from 'lucide-svelte';
 	import Job from './components/Job.svelte';
 	import Skills from './components/Skills.svelte';
 	import Heading from '$lib/components/Heading.svelte';
 
 	let { data } = $props();
-	const { jobs, skills } = data;
 </script>
 
 <div class="mb-4 flex justify-center px-12 text-home-cream sm:justify-end">
@@ -22,7 +21,7 @@
 			<Heading text="Experience" />
 		</div>
 		<div>
-			{#each jobs as job}
+			{#each data.jobs as job}
 				<div class="mb-8">
 					<Job {job} />
 				</div>
@@ -35,7 +34,7 @@
 				<Heading text="Skills" />
 			</div>
 			<div>
-				<Skills {skills} />
+				<Skills skills={data.skills} />
 			</div>
 		</div>
 	</div>

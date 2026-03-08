@@ -1,11 +1,8 @@
 <script lang="ts">
 	import '../app.css';
 	import Header from '$lib/sections/Header.svelte';
-	import type { Snippet } from 'svelte';
-	import type { LayoutData } from './$types';
 
-	/** @type {{children?: import('svelte').Snippet}} */
-	let { data, children }: { data: LayoutData; children: Snippet } = $props();
+  let props = $props()
 	let showMenu = $state(false);
 </script>
 
@@ -14,10 +11,10 @@
 >
 	<div class="mb-8 flex px-8 py-2">
 		<div class="flex w-full flex-col gap-3">
-			<Header bind:showMenu sections={data.sections} />
+			<Header bind:showMenu sections={props.data.sections} />
 		</div>
 	</div>
-	{@render children()}
+	{@render props.children()}
 </main>
 
 <style></style>

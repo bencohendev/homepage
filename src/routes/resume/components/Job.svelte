@@ -1,33 +1,32 @@
 <script lang="ts">
-	import type { TJob } from '../proxy+page';
+	import type { TJob } from '../+page';
 
-	export let job: TJob;
-	const { company, title, link, date, subhead, bullets } = job;
+	let { job }: { job: TJob } = $props();
 </script>
 
 <section class="text-home-cream">
 	<div class="flex flex-col gap-4">
 		<div>
 			<h3 class="w-fit text-2xl font-bold text-home-yellow hover:scale-110">
-				<a href={link} target="_blank">
-					{company}
+				<a href={job.link} target="_blank">
+					{job.company}
 				</a>
 			</h3>
 			<div>
-				{subhead}
+				{job.subhead}
 			</div>
 		</div>
 		<div class="flex flex-col sm:flex-row sm:items-center sm:gap-4">
 			<div class="text-xl font-bold text-home-blue">
-				{title}
+				{job.title}
 			</div>
 			<div class="hidden sm:block">|</div>
 			<div class="italic">
-				{date}
+				{job.date}
 			</div>
 		</div>
 		<ul class="flex flex-col">
-			{#each bullets as bullet}
+			{#each job.bullets as bullet}
 				<li class="mb-2 ml-8 list-disc">
 					{bullet.text}
 				</li>

@@ -1,12 +1,12 @@
 <script lang="ts">
-	import type { TSkill } from '../proxy+page';
+	import type { TSkill } from '../+page';
 	import Skill from './Skill.svelte';
 
-	export let skills: Array<TSkill>;
-	const languages = skills.filter((skill) => skill.category === 'Languages');
-	const technologies = skills.filter((skill) => skill.category === 'Technologies');
-	const tooling = skills.filter((skill) => skill.category === 'Tooling');
-	const process = skills.filter((skill) => skill.category === 'Process');
+	let { skills }: { skills: Array<TSkill> } = $props();
+	const languages = $derived(skills.filter((skill) => skill.category === 'Languages'));
+	const technologies = $derived(skills.filter((skill) => skill.category === 'Technologies'));
+	const tooling = $derived(skills.filter((skill) => skill.category === 'Tooling'));
+	const process = $derived(skills.filter((skill) => skill.category === 'Process'));
 </script>
 
 <section class="flex flex-col gap-4">
