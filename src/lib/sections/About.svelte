@@ -2,7 +2,7 @@
 	import Heading from '$lib/components/Heading.svelte';
 </script>
 
-<section class="flex justify-center px-12 text-home-cream">
+<section class="text-home-cream flex justify-center px-12">
 	<div class="flex flex-col 2xl:w-1/2">
 		<div class="mb-4 w-full">
 			<Heading text="About" />

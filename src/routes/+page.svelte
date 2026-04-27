@@ -6,6 +6,6 @@
 	<title>Ben Cohen Dev</title>
 </svelte:head>
 
-<section class="flex flex-col items-center justify-center py-8 text-home-cream">
+<section class="text-home-cream flex flex-col items-center justify-center py-8">
 	<Intro />
 </section>

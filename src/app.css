@@ -1,6 +1,16 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import 'tailwindcss';
+
+@theme {
+	--color-home-purple: #372554;
+	--color-home-cream: #feffec;
+	--color-home-orange: #ef8354;
+	--color-home-yellow: #f1d302;
+	--color-home-blue: #508991;
+	--color-home-green: #447604;
+	--color-home-red: #bf0603;
+
+	--font-grotesk: 'Space Grotesk';
+}
 
 @layer base {
 	@font-face {

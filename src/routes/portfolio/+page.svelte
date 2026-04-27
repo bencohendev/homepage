@@ -7,10 +7,10 @@
 	let projects = $derived(data.projects);
 </script>
 
-<section class="flex w-full flex-col items-center justify-center px-12 text-home-cream">
+<section class="text-home-cream flex w-full flex-col items-center justify-center px-12">
 	<div class="2xl:w-3/4">
 		<Heading text="Personal Projects" />
-		<p class="mb-8 mt-4">
+		<p class="mt-4 mb-8">
 			Below I have a sampling of some fun personal projects I've made over the years. For more
 			information about development I've done in a professional capacity, please go take a look at
 			my
