@@ -1,9 +1,10 @@
 <script>
+	import { resolve } from '$app/paths';
 	import Heading from '$lib/components/Heading.svelte';
 	import Project from './components/Project.svelte';
 
 	let { data } = $props();
-	let projects  = $derived(data.projects);
+	let projects = $derived(data.projects);
 </script>
 
 <section class="flex w-full flex-col items-center justify-center px-12 text-home-cream">
@@ -13,15 +14,16 @@
 			Below I have a sampling of some fun personal projects I've made over the years. For more
 			information about development I've done in a professional capacity, please go take a look at
 			my
-			<a class="text-home-blue underline underline-offset-4 hover:opacity-75" href="/resume"
-				>Resume Page</a
+			<a
+				class="text-home-blue underline underline-offset-4 hover:opacity-75"
+				href={resolve('/resume')}>Resume Page</a
 			>
 		</p>
-		<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+		<div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
 			<div class="sm:col-span-2">
 				<Project project={projects[0]} />
 			</div>
-			{#each projects.slice(1) as project}
+			{#each projects.slice(1) as project (project.title)}
 				<Project {project} />
 			{/each}
 		</div>

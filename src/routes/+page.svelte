@@ -9,4 +9,3 @@
 <section class="flex flex-col items-center justify-center py-8 text-home-cream">
 	<Intro />
 </section>
-
