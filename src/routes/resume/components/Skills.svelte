@@ -11,25 +11,25 @@
 
 <section class="flex flex-col gap-4">
 	<div>
-		<h3 class="text-2xl font-bold text-home-yellow">Languages</h3>
+		<h3 class="text-home-yellow text-2xl font-bold">Languages</h3>
 		{#each languages as skill (skill.name)}
 			<Skill {skill} />
 		{/each}
 	</div>
 	<div>
-		<h3 class="text-2xl font-bold text-home-yellow">Technologies</h3>
+		<h3 class="text-home-yellow text-2xl font-bold">Technologies</h3>
 		{#each technologies as skill (skill.name)}
 			<Skill {skill} />
 		{/each}
 	</div>
 	<div>
-		<h3 class="text-2xl font-bold text-home-yellow">Tooling</h3>
+		<h3 class="text-home-yellow text-2xl font-bold">Tooling</h3>
 		{#each tooling as skill (skill.name)}
 			<Skill {skill} />
 		{/each}
 	</div>
 	<div>
-		<h3 class="text-2xl font-bold text-home-yellow">Process</h3>
+		<h3 class="text-home-yellow text-2xl font-bold">Process</h3>
 		{#each process as skill (skill.name)}
 			<Skill {skill} />
 		{/each}

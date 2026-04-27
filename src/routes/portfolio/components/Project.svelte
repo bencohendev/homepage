@@ -8,7 +8,7 @@
 	<div>
 		<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -- external URL -->
 		<a class="text-home-yellow" href={project.link} target="_blank">
-			<h3 class="w-fit text-2xl font-bold text-home-yellow hover:scale-110">{project.title}</h3>
+			<h3 class="text-home-yellow w-fit text-2xl font-bold hover:scale-110">{project.title}</h3>
 		</a>
 	</div>
 	<div class="flex min-h-32 flex-1">

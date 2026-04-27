@@ -7,7 +7,7 @@
 </script>
 
 <main
-	class={`${showMenu ? 'max-h-lvh overflow-hidden' : ''} h-full min-h-lvh bg-black p-1 font-grotesk`}
+	class={`${showMenu ? 'max-h-lvh overflow-hidden' : ''} font-grotesk h-full min-h-lvh bg-black p-1`}
 >
 	<div class="mb-8 flex px-8 py-2">
 		<div class="flex w-full flex-col gap-3">

@@ -9,7 +9,7 @@
 	let { data } = $props();
 </script>
 
-<div class="mb-4 flex justify-center px-12 text-home-cream sm:justify-end">
+<div class="text-home-cream mb-4 flex justify-center px-12 sm:justify-end">
 	<a
 		class="flex gap-2 hover:scale-110"
 		href="{base}/Ben_Cohen-Chen_Senior_Engineer.pdf"
@@ -17,7 +17,7 @@
 		>Download as PDF <span class="relative bottom-0.5"><Download color="white" /></span>
 	</a>
 </div>
-<section class="flex flex-col justify-center gap-24 px-12 text-home-cream lg:flex-row">
+<section class="text-home-cream flex flex-col justify-center gap-24 px-12 lg:flex-row">
 	<div>
 		<div class="mb-4">
 			<Heading text="Experience" />

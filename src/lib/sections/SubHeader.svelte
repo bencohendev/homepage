@@ -6,7 +6,7 @@
 </script>
 
 <div class="flex justify-center gap-6 sm:justify-between sm:gap-0">
-	<div class=" flex gap-6 text-home-cream">
+	<div class=" text-home-cream flex gap-6">
 		<SubNavItem link="https://github.com/bencohendev" Icon={Github} bind:hovered index={0} />
 		|
 		<SubNavItem
@@ -17,7 +17,7 @@
 		/>
 	</div>
 	<div class="text-home-cream sm:hidden">|</div>
-	<div class="flex gap-6 text-home-cream">
+	<div class="text-home-cream flex gap-6">
 		<SubNavItem link="mailto:ben@bencohen.dev" Icon={Mail} bind:hovered index={2} />
 		|
 		<SubNavItem link="tel:9316259833" Icon={Phone} bind:hovered index={3} />

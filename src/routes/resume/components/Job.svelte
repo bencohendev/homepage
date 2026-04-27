@@ -7,7 +7,7 @@
 <section class="text-home-cream">
 	<div class="flex flex-col gap-4">
 		<div>
-			<h3 class="w-fit text-2xl font-bold text-home-yellow hover:scale-110">
+			<h3 class="text-home-yellow w-fit text-2xl font-bold hover:scale-110">
 				<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -- external URL -->
 				<a href={job.link} target="_blank">
 					{job.company}
@@ -18,7 +18,7 @@
 			</div>
 		</div>
 		<div class="flex flex-col sm:flex-row sm:items-center sm:gap-4">
-			<div class="text-xl font-bold text-home-blue">
+			<div class="text-home-blue text-xl font-bold">
 				{job.title}
 			</div>
 			<div class="hidden sm:block">|</div>
