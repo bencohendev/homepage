@@ -1,6 +1,8 @@
 <script lang="ts">
 	import SubNavItem from '$lib/components/header/SubNavItem.svelte';
-	import { Github, Linkedin, Phone, MapPinned, Mail } from 'lucide-svelte';
+	import Github from '$lib/components/icons/Github.svelte';
+	import Linkedin from '$lib/components/icons/Linkedin.svelte';
+	import { Phone, MapPinned, Mail } from 'lucide-svelte';
 
 	let hovered: number = $state(-1);
 </script>
