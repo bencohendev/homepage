@@ -4,19 +4,19 @@ This repo uses the work lifecycle workflow. Open Claude Code (or any agent) and 
 
 ## Skills
 
-| Skill | When to use |
-|---|---|
-| `/find-work` | See what's Active, Planned, Blocked across projects |
-| `/add-work <text>` | File a new Issue, attach to board with Status = Planned |
-| `/work-on [#]` | **Single hand-off.** Drives the full lifecycle on an Issue. Resumable based on Issue + PR state. With no argument, shows the kanban and prompts you to pick. |
-| `/start-work <#>` | (escape hatch) Flip Status → Active, suggest branch, print phases |
-| `/verify-work` | (escape hatch) Run verify commands; no state change |
-| `/finish-work <#>` | (escape hatch) Verify → confirm PR merged → Status → Done → close Issue |
+| Skill              | When to use                                                                                                                                                  |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `/find-work`       | See what's Active, Planned, Blocked across projects                                                                                                          |
+| `/add-work <text>` | File a new Issue, attach to board with Status = Planned                                                                                                      |
+| `/work-on [#]`     | **Single hand-off.** Drives the full lifecycle on an Issue. Resumable based on Issue + PR state. With no argument, shows the kanban and prompts you to pick. |
+| `/start-work <#>`  | (escape hatch) Flip Status → Active, suggest branch, print phases                                                                                            |
+| `/verify-work`     | (escape hatch) Run verify commands; no state change                                                                                                          |
+| `/finish-work <#>` | (escape hatch) Verify → confirm PR merged → Status → Done → close Issue                                                                                      |
 
 ## Phases an agent walks through during `/work-on`
 
 1. **Build/implement** — work happens on a feature branch (suggested name: `issue-<#>-<slug>`).
-2. **Document (only if warranted)** — write an ADR at `docs/decisions/NNN-<slug>.md` *only if* the work made a non-obvious decision. Skip otherwise.
+2. **Document (only if warranted)** — write an ADR at `docs/decisions/NNN-<slug>.md` _only if_ the work made a non-obvious decision. Skip otherwise.
 3. **Verify** — `npm run check` + `npm run build` must pass.
 4. **PR + review** — open the PR; the agent stops here. Re-run `/work-on <#>` after merge to flip Status → Done.
 
@@ -31,7 +31,7 @@ Write an ADR when the work involves at least one of:
 
 **Skip the ADR for:** bug fixes, dep bumps, renames, single-file features that follow established patterns, copy/UI tweaks. Most work doesn't get an ADR — that's the point.
 
-ADRs are *immutable*. Once written, they record a decision at a point in time. Don't edit them; if a decision is reversed later, write a new ADR superseding it.
+ADRs are _immutable_. Once written, they record a decision at a point in time. Don't edit them; if a decision is reversed later, write a new ADR superseding it.
 
 ADR template lives at `docs/decisions/_template.md`. Naming: `docs/decisions/NNN-<slug>.md` where `NNN` is the next zero-padded number.
 

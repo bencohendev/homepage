@@ -2,7 +2,7 @@
 	import '../app.css';
 	import Header from '$lib/sections/Header.svelte';
 
-  let props = $props()
+	let props = $props();
 	let showMenu = $state(false);
 </script>
 

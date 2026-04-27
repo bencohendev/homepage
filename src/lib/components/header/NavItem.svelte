@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { resolve } from '$app/paths';
+
 	let { active = $bindable(), link, hovered = $bindable(), i, lastItem } = $props();
 
 	let activeClass = $derived(
@@ -15,7 +17,7 @@
 	onmouseenter={() => (hovered = i)}
 	onmouseleave={() => (hovered = -1)}
 >
-	<a href={link.slug} onclick={() => (active = link.slug)}>
+	<a href={resolve(link.slug)} onclick={() => (active = link.slug)}>
 		{link.label}
 	</a>
 </li>

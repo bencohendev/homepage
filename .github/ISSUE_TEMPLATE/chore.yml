@@ -1,7 +1,7 @@
 name: Chore
 description: Maintenance, refactor, or non-user-facing work
-title: "[Chore] "
-labels: ["type:chore", "tracked"]
+title: '[Chore] '
+labels: ['type:chore', 'tracked']
 body:
   - type: textarea
     id: summary

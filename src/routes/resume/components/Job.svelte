@@ -8,6 +8,7 @@
 	<div class="flex flex-col gap-4">
 		<div>
 			<h3 class="w-fit text-2xl font-bold text-home-yellow hover:scale-110">
+				<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -- external URL -->
 				<a href={job.link} target="_blank">
 					{job.company}
 				</a>
@@ -26,12 +27,12 @@
 			</div>
 		</div>
 		<ul class="flex flex-col">
-			{#each job.bullets as bullet}
+			{#each job.bullets as bullet (bullet.text)}
 				<li class="mb-2 ml-8 list-disc">
 					{bullet.text}
 				</li>
 				{#if bullet?.subPoints?.length}
-					{#each bullet.subPoints as subPoint}
+					{#each bullet.subPoints as subPoint (subPoint.text)}
 						<li class="mb-1 ml-12 list-disc">
 							{subPoint.text}
 						</li>

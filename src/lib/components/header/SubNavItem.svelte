@@ -1,4 +1,5 @@
 <script>
+	/* eslint-disable svelte/no-navigation-without-resolve -- external URLs only */
 	let { Icon, link, hovered = $bindable(), index } = $props();
 </script>
 
@@ -9,5 +10,5 @@
 	href={link}
 	target="_blank"
 >
-	<Icon color={'white'} />
+	<Icon color="white" />
 </a>

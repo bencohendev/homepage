@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { TSections } from '../../routes/+layout';
 	import { page } from '$app/state';
+	import { resolve } from '$app/paths';
 	import { Menu } from 'lucide-svelte';
 	import { X as Close } from 'lucide-svelte';
 	import NavItem from '$lib/components/header/NavItem.svelte';
@@ -16,19 +17,19 @@
 <div class="flex flex-col gap-4">
 	<div class="flex flex-row items-center justify-between gap-4 sm:justify-normal">
 		<h1 class="whitespace-nowrap text-center text-4xl text-home-cream hover:scale-105 lg:text-6xl">
-			<a href={'/'} onclick={() => (active = '/')}> Ben Cohen-Chen </a>
+			<a href={resolve('/')} onclick={() => (active = '/')}> Ben Cohen-Chen </a>
 		</h1>
 		<div class="block sm:hidden">
 			{#if showMenu}
-				<Close color={'white'} onclick={() => (showMenu = !showMenu)} />
+				<Close color="white" onclick={() => (showMenu = !showMenu)} />
 			{:else}
-				<Menu color={'white'} onclick={() => (showMenu = !showMenu)} />
+				<Menu color="white" onclick={() => (showMenu = !showMenu)} />
 			{/if}
 		</div>
 		<ul
 			class="hidden w-full justify-center gap-2 text-home-cream sm:flex sm:justify-end lg:gap-6 lg:text-xl"
 		>
-			{#each sections as link, i}
+			{#each sections as link, i (link.slug)}
 				<NavItem bind:active {link} bind:hovered {i} lastItem={i === sections.length - 1} />
 			{/each}
 		</ul>
@@ -44,7 +45,7 @@
 			class="flex h-lvh flex-col gap-8 bg-black"
 		>
 			<ul class="flex w-full flex-col items-center justify-center gap-6 text-2xl text-home-cream">
-				{#each sections as link, i}
+				{#each sections as link, i (link.slug)}
 					<NavItem bind:active {link} bind:hovered i={i + 1} lastItem={i === sections.length - 1} />
 				{/each}
 			</ul>
